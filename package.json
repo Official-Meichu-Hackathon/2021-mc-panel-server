@@ -1,0 +1,30 @@
+{
+  "name": "mc-panel-server-2021",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix **/*.js",
+    "dev": "cross-env NODE_ENV=dev nodemon --es-module-specifier-resolution=node app.js",
+    "docker-compose-dev:up": "docker-compose -f docker-compose.dev.yml up -d",
+    "docker-compose-dev:down": "docker-compose -f docker-compose.dev.yml down"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fastest-validator": "^1.10.1",
+    "mongoose": "^5.12.4",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}

@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+  mongo:
+    container_name: mc-panel-mongo
+    image: mongo:4.4
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    volumes:
+      - mc-panel-mongo:/data/db
+    ports:
+      - 27017:27017
+    restart: on-failure
+    command: mongod
+volumes:
+  mc-panel-mongo:

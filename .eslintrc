@@ -1,0 +1,26 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": "airbnb-base",
+  "rules": {
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "never"
+    ],
+    "object-curly-newline": [
+      "off"
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 125
+      }
+    ]
+  }
+}
